@@ -6,7 +6,7 @@ import HeaderSocial from "./HeaderSocial";
 
 const Header = () => {
   return (
-    <header className="bg-center bg-no-repeat bg-cover h-[39rem] px-4 bg-header-background ">
+    <header className="bg-center bg-no-repeat bg-cover mb-4 h-[39rem] px-4 bg-header-background ">
       <div className="flex container max-w-screen-xl  m-auto h-full relative flex-col justify-start items-center pt-8">
         <div>
           <h3 className="text-stone-300 md:text-lg  text-xs bg-fixed mb-2 text-center">
