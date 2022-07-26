@@ -12,7 +12,7 @@ const About = () => {
     <section className="flex px  flex-col justify-center items-center pt-2 container  m-auto">
       <div className="flex mb-4 flex-col gap-2 justify-center items-center">
         <h4 className="text-gray-800 text-sm md:text-lg">Get To Know</h4>
-        <h2 className="text-blue-400 text-3xl font-bold md:text-4xl">
+        <h2 className="text-blue-400 text-5xl font-bold md:text-4xl">
           About Me
         </h2>
       </div>

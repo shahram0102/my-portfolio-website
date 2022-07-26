@@ -55,10 +55,10 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="container  px-8 m-auto flex flex-col justify-center items-center mt-4">
+    <section className="container mb-8 px-8 m-auto flex flex-col justify-center items-center mt-4">
       <div className="flex flex-col mb-12  items-center gap-2">
         <h4 className="text-gray-800 font-semibold">What Skils I Have</h4>
-        <h2 className="text-blue-400 font-bold text-3xl">My Experience</h2>
+        <h2 className="text-blue-400 font-bold text-5xl">My Experience</h2>
       </div>
       <div className="flex flex-col items-center gap-12 shadow-xl w-full">
         <h3 className="text-blue-400 font-black text-xl">
