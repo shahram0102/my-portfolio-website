@@ -5,7 +5,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { FiBookOpen } from "react-icons/fi";
 import { AiOutlineMessage } from "react-icons/ai";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 const NavBar = () => {
   const [active, setIsActive] = useState(0);
@@ -16,7 +16,7 @@ const NavBar = () => {
         <Link
           onClick={() => setIsActive(1)}
           className={`px-4 ${
-            active == 1 && "bg-blue-400"
+            active === 1 && "bg-blue-400"
           } hover:text-blue-400 duration-300 rounded-lg hover:bg-[rgba(0,0,0,0.3)]   py-2 block`}
           to="/"
         >
@@ -27,7 +27,7 @@ const NavBar = () => {
         <Link
           onClick={() => setIsActive(2)}
           className={`px-4 ${
-            active == 2 && "bg-blue-400"
+            active === 2 && "bg-blue-400"
           } hover:text-blue-400 duration-300 rounded-lg hover:bg-[rgba(0,0,0,0.3)]   py-2 block`}
           to="/about"
         >
@@ -38,7 +38,7 @@ const NavBar = () => {
         <Link
           onClick={() => setIsActive(3)}
           className={`px-4 ${
-            active == 3 && "bg-blue-400"
+            active === 3 && "bg-blue-400"
           } hover:text-blue-400 duration-300 rounded-lg hover:bg-[rgba(0,0,0,0.3)]   py-2 block`}
           to="/experience"
         >
@@ -50,7 +50,7 @@ const NavBar = () => {
         <Link
           onClick={() => setIsActive(4)}
           className={`px-4 ${
-            active == 4 && "bg-blue-400"
+            active === 4 && "bg-blue-400"
           } hover:text-blue-400 duration-300 rounded-lg hover:bg-[rgba(0,0,0,0.3)]   py-2 block`}
           to="/contact"
         >

@@ -34,11 +34,11 @@ const Header = () => {
           </Link>
         </div>
         <HeaderSocial />
-        <div className="text-blue-400 absolute right-0 bottom-20 font-bold cursor-pointer rotate-90">Scroll Down</div>
+        <a href="#contactUs" className="text-blue-400 absolute right-0 bottom-20 font-bold cursor-pointer rotate-90">Scroll Down</a>
         <div className="absolute hover:opacity-50 duration-700 hover:rotate-[20deg] w-[200px] sm:w-72 hover:scale-75 hover: left-1/2  md:w-64 bottom-2 -translate-x-1/2 mt-4 rounded-br-[15rem] rounded-t-[11rem] bg-blue-400  flex justify-center items-center">
           <img
             src={myImage}
-            className="object-fill w-full  border-b-8 border-red-400 rounded-r-full  drop-shadow-2xl  "
+            className="object-fill w-full  border-b-8 border-red-400 rounded-r-full  drop-shadow-2xl"
             alt="my/Image"
           />
         </div>

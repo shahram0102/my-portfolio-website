@@ -31,7 +31,7 @@ const data = [
 
 const Contact = () => {
   return (
-    <section className="container w-full  mt-4 m-auto flex flex-col justify-center items-center">
+    <section id="contactUs" className="container w-full  mt-4 m-auto flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
         <h4 className="text-gray-700 mb-2 font-bold text-lg ">
           send message to me
