@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
-import About from "./components/About/About";
-import Header from "./components/Header/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import NavBar from "./components/Nav/NavBar";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <NavBar />
+      <ToastContainer />
     </>
   );
 }

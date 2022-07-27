@@ -1,7 +1,10 @@
 import { useFormik } from "formik";
-import React from "react";
 import * as yup from "yup";
 import Input from "../../common/Input";
+import { toast } from "react-toastify";
+
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 // 1.Initial Values
 const initialValues = {
@@ -28,7 +31,11 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
-  const onSubmit = (values) => {};
+  const navigate = useNavigate();
+  const onSubmit = async (values) => {
+    toast.success("sending email success");
+    navigate("/", { replace: true });
+  };
   const formik = useFormik({
     initialValues,
     onSubmit,
@@ -37,7 +44,10 @@ const Form = () => {
   });
 
   return (
-    <form className="bg-stone-400 rounded-lg  p-2">
+    <form
+      onSubmit={formik.handleSubmit}
+      className="bg-blue-800 h-fit  rounded-lg  px-2 py-4"
+    >
       <Input placeholder={"Your Full Name"} formik={formik} name={"name"} />
       <Input
         placeholder={"Your Email"}
@@ -53,7 +63,7 @@ const Form = () => {
           onChange={formik.handleChange}
           name="message"
           onBlur={formik.handleBlur}
-          className={`  mb-2 text-blue-400 text-xl rounded-lg placeholder:text-sm min-h-[120px] min-w-[360px] w-[360px] p-3 ${
+          className={`  mb-2 text-blue-400 text-xl rounded-lg placeholder:text-sm min-h-[120px] min-w-[400px] w-[400px] p-3 ${
             formik.errors.message &&
             formik.touched.message &&
             "border-red-600 border"
