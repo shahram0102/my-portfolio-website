@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import resume from "../../assets/CV.pdf";
 
 // my Image
 import myImage from "../../assets/my-image-1.png";
@@ -20,21 +20,27 @@ const Header = () => {
           </h3>
         </div>
         <div className="flex mb-4 justify-between gap-4">
-          <Link
-            to="/"
+          <a
+            href={resume}
+            target={"_blank"}
             className="text-blue-400 border md:text-lg border-blue-400 rounded-md p-2 text-sm"
           >
             Download CV
-          </Link>
-          <Link
-            to="/"
+          </a>
+          <a
+            href="#contactUs"
             className="bg-blue-400 rounded-md md:text-lg font-thin p-2 text-gray-800  text-sm"
           >
             Lets`Talk
-          </Link>
+          </a>
         </div>
         <HeaderSocial />
-        <a href="#contactUs" className="text-blue-400 absolute right-0 bottom-20 font-bold cursor-pointer rotate-90">Scroll Down</a>
+        <a
+          href="#contactUs"
+          className="text-blue-400 absolute right-0 bottom-20 font-bold cursor-pointer rotate-90"
+        >
+          Scroll Down
+        </a>
         <div className="absolute hover:opacity-50 duration-700 hover:rotate-[20deg] w-[200px] sm:w-72 hover:scale-75 hover: left-1/2  md:w-64 bottom-2 -translate-x-1/2 mt-4 rounded-br-[15rem] rounded-t-[11rem] bg-blue-400  flex justify-center items-center">
           <img
             src={myImage}
