@@ -5,8 +5,8 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
-import { SiMaterialui } from "./react-icons/Si";
-import { SiGraphql } from "./react-icons/Si";
+import { SiMaterialui } from "react-icons/si";
+import { SiGraphql } from "react-icons/si";
 
 import { OneOfExpertise } from "./OneOfExpertise";
 
