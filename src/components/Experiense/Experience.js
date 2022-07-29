@@ -5,6 +5,9 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
+import { SiMaterialui } from "./react-icons/Si";
+import { SiGraphql } from "./react-icons/Si";
+
 import { OneOfExpertise } from "./OneOfExpertise";
 
 const experiences = [
@@ -12,45 +15,63 @@ const experiences = [
     icon: <AiOutlineHtml5 />,
     typeExpertise: "html5",
     levelExpertise: "experienced",
-    descExpertise: "Full familiarity with html5, I know all the necessary and important tags.",
+    descExpertise:
+      "Full familiarity with html5, I know all the necessary and important tags.",
   },
   {
     icon: <DiCss3 />,
     typeExpertise: "css3",
     levelExpertise: "experienced",
-    descExpertise: "Getting to know the advanced features of raw css and working with raw css without the need for a framework.",
+    descExpertise:
+      "Getting to know the advanced features of raw css and working with raw css without the need for a framework.",
   },
   {
     icon: <TbBrandJavascript />,
     typeExpertise: "javascript",
     levelExpertise: "intermediate",
-    descExpertise: "Familiarity with dom topics and array methods. Proficient with http request topics. Java Script is an endless ocean and I am always learning Java Script.",
+    descExpertise:
+      "Familiarity with dom topics and array methods. Proficient with http request topics. Java Script is an endless ocean and I am always learning Java Script.",
   },
   {
     icon: <FaGitAlt />,
     typeExpertise: "git",
     levelExpertise: "experienced",
-    descExpertise: "Complete mastery of Git to work in group environments and teamwork.",
+    descExpertise:
+      "Complete mastery of Git to work in group environments and teamwork.",
   },
 
   {
     icon: <SiTailwindcss />,
     typeExpertise: "tailwind",
     levelExpertise: "experienced",
-    descExpertise: "The good feeling of working with tailwind cannot be found in any framework. It is really enjoyable. I practice every day to become an expert in the full sense of tailwind.",
+    descExpertise:
+      "The good feeling of working with tailwind cannot be found in any framework. It is really enjoyable. I practice every day to become an expert in the full sense of tailwind.",
   },
   {
     icon: <FaReact />,
     typeExpertise: "react",
     levelExpertise: "experienced",
-    descExpertise: "Complete familiarity with functional components and relative control over component classes. Familiarity with most popular React packages.",
+    descExpertise:
+      "Complete familiarity with functional components and relative control over component classes. Familiarity with most popular React packages.",
   },
   {
-   icon: <DiSass />,
-   typeExpertise: "sass",
-   levelExpertise: "Low mastery",
-   descExpertise: "I have just started learning sass and I am learning.",
- },
+    icon: <DiSass />,
+    typeExpertise: "sass",
+    levelExpertise: "Low mastery",
+    descExpertise: "I have just started learning sass and I am learning.",
+  },
+  {
+    icon: <SiMaterialui />,
+    typeExpertise: "materialUI",
+    levelExpertise: "middle mastery",
+    descExpertise: "Relative mastery of ready-made mUI components and their use.",
+  },
+  {
+    icon: <SiGraphql />,
+    typeExpertise: "GraphQL",
+    levelExpertise: "Low mastery",
+    descExpertise: "I have a brief knowledge of GraphQL and I have the ability to work with APIs in this way.",
+  },
 ];
 
 const Experience = () => {
