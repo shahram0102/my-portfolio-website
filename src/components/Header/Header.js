@@ -22,12 +22,14 @@ const Header = () => {
         <div className="flex mb-4 justify-between gap-4">
           <a
             href={resume}
+            rel="noreferrer"
             target={"_blank"}
             className="text-blue-400 border md:text-lg border-blue-400 rounded-md p-2 text-sm"
           >
             Download CV
           </a>
           <a
+            rel="noreferrer"
             href="#contactUs"
             className="bg-blue-400 rounded-md md:text-lg font-thin p-2 text-gray-800  text-sm"
           >
@@ -36,6 +38,7 @@ const Header = () => {
         </div>
         <HeaderSocial />
         <a
+          rel="noreferrer"
           href="#contactUs"
           className="text-blue-400 absolute right-0 bottom-20 font-bold cursor-pointer rotate-90"
         >
@@ -45,7 +48,7 @@ const Header = () => {
           <img
             src={myImage}
             className="object-fill w-full  border-b-8 border-red-400 rounded-r-full  drop-shadow-2xl"
-            alt="my/Image"
+            alt="myImage"
           />
         </div>
       </div>

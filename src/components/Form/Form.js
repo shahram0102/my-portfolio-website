@@ -3,7 +3,7 @@ import * as yup from "yup";
 import Input from "../../common/Input";
 import { toast } from "react-toastify";
 
-import React, { useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 // 1.Initial Values
@@ -63,7 +63,7 @@ const Form = () => {
           onChange={formik.handleChange}
           name="message"
           onBlur={formik.handleBlur}
-          className={`  mb-2 text-blue-400 text-xl rounded-lg placeholder:text-sm min-h-[120px] min-w-[400px] w-[400px] p-3 ${
+          className={`  mb-2 text-blue-400 text-xl rounded-lg placeholder:text-sm min-h-[120px] min-w-[300px] w-full p-3 ${
             formik.errors.message &&
             formik.touched.message &&
             "border-red-600 border"

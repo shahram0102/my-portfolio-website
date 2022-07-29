@@ -5,6 +5,7 @@ function ContactOption({ item }) {
   return (
     <a
       href={link}
+      rel="noreferrer"
       target="_blank"
       className="flex p-8  duration-300 hover:shadow-xl hover:shadow-blue-600 hover:scale-105 hover:text-blue-700 hover:bg-blue-200 rounded-3xl flex-col justify-center items-center bg-blue-800 min-w-[250px] max-w-[250px]"
     >
